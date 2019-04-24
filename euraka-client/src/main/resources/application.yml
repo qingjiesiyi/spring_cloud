@@ -1,0 +1,11 @@
+server:
+  port: 8701
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8700/eureka/  #指定服务注册中心
+
+spring:
+  application:
+    name: euraka-client

@@ -1,0 +1,11 @@
+server:
+  port: 8700
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false #是否将当前项目注册到Eureka server，默认为true,当前就是Eureka server所以为false
+    fetchRegistry: false #是否从Eureka server获取注册信息，默认true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
